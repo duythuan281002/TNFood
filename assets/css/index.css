@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --primary: #0d6938;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bgr_top_header {
+    background-color: var(--primary);
+}
+
+.top_header {
+    height: 45px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_header_right i,
+.top_header_left i  {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.top_header_right,
+.top_header_left {
+    display: flex;
+    align-items: center;
+}
+
+.top_header_right {
+    cursor: pointer;
+}
+
+.top_header_left_text {
+    font-size: 15px;
+}
+
+.wrapper_header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.header,
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    background-color: #0d6938;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+.header_item {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 30px;
+}
+
+.header_item:hover{
+    color: var(--primary);
+}
+
+.header_cart {
+    cursor: pointer;
+    position: relative;
+}
+
+.header_cart_qtt {
+    font-size: 12px;
+    background-color: #0d6938;
+    padding: 2px 4px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.header_cart i{
+    font-size: 24px;
+    padding: 5px;
+}
+
+.header_cart i:hover{
+    color: var(--primary);
+}
+
+
+
+.content_title {
+    padding: 20px 0;
+}
+
+.action_title_home {
+    color: var(--primary);
+}
+
+.content_name {
+    padding: 15px 0;
+}
+
+.content_name_text {
+    font-size: 24px;
+}
+
+.content_list {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.content_list_grid8 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content_item_wrapper {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.content_item {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.content_item_image {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.content_item_image .item_img {
+    width: 100%;
+    transition: all .5s ease;
+
+}
+
+.content_item_image .item_img:hover {
+    transform: scale(1.07,1.07);
+}
+
+.content_item_name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 5px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.content_item_name:hover {
+    color: var(--primary);
+}
+
+.content_item_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_item_price-text {
+    font-size: 18px;
+    color: #282828;
+}
+
+.content_item_price-gia {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px 0 5px;
+}
+
+.content_item_price-giamgia {
+    color: #282828;
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content_item_ptgg {
+    width: 90px;
+    background: #dc3545;
+    border-radius: 10px;
+    padding: 4px 2px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content_item_btnBuy {
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    position: absolute;
+    width: 287.5px;
+    bottom: 100px;
+    opacity: 0;
+}
+
+.content_item_btnBuy:hover {
+    background-color: white;
+    color: var(--primary);
+}
+
+.content_item_wrapper:hover .content_item_btnBuy {
+    animation: btnBuy .5s ease-in-out forwards;
+
+}
+
+@keyframes btnBuy {
+    0% {
+        bottom: -40px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+  }
+
+
+.footer {
+    background: #f7f3f3;
+    padding: 5px 0;
+}
+
+.footer_contai {
+    text-align: center;
+}
+
+.footer_contai_text {
+    font-size: 12px;
+    color: #888;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
